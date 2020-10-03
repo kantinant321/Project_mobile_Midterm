@@ -1,0 +1,10 @@
+.toolbar__title{
+    background-color: rgb(255, 0, 0);
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.tabbar{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
