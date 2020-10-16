@@ -5,12 +5,6 @@ document.addEventListener('init', function(event) {
     page.querySelector('#m1').onclick = function() {
       document.querySelector('#myNavigator').pushPage('views/detail.html', {data: {title: 'Page 2'}});
     };
-    page.querySelector('#m2').onclick = function() {
-      document.querySelector('#myNavigator').pushPage('views/detail.html', {data: {title: 'Page 2'}});
-    };
-    page.querySelector('#m3').onclick = function() {
-      document.querySelector('#myNavigator').pushPage('views/detail.html', {data: {title: 'Page 2'}});
-    };
   } else if (page.id === 'page2') {
     page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
   }
