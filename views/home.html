@@ -5,16 +5,30 @@
   <ons-page id="page1">
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
-          <img src="img/1.jpg" width="375" height="550" id="m1">
+          <img src="https://firebasestorage.googleapis.com/v0/b/movietest-affbf.appspot.com/o/poster%2F1.jpg?alt=media&token=7093e103-dddc-4bec-9f4c-b6fcc6a98251" width="375" height="550" id="m1">
         </ons-carousel-item>
         <ons-carousel-item>
-          <img src="img/2.jpg" width="375" height="550">
+          <img src="https://firebasestorage.googleapis.com/v0/b/movietest-affbf.appspot.com/o/poster%2F2.jpg?alt=media&token=2d565bda-a511-485f-8813-629f8764c693" width="375" height="550" id="m2">
         </ons-carousel-item>
         <ons-carousel-item>
-          <img src="img/3.jpg" width="375" height="550">
+          <img src="https://firebasestorage.googleapis.com/v0/b/movietest-affbf.appspot.com/o/poster%2F3.jpg?alt=media&token=2637e14c-f9e6-47ba-9be8-a8b2dd0e3df4" width="375" height="550" id="m3">
         </ons-carousel-item>
       </ons-carousel>
-      <h1>Top 3 of August</h1>
+      <h1>Top 3 anime movie</h1>
+      <button type="button" id="signout" class="btn btn-primary">Sign Out</button>
+
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js"></script>
   </ons-page>
 </template>
 </ons-page>
