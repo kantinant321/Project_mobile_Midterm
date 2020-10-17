@@ -24,7 +24,9 @@ $(function () {
             }).catch(function (error) {
                 // An error happened.
             });
-    });
+      });
+
+    
 
     var db = firebase.firestore();
     db.collection("movie")
