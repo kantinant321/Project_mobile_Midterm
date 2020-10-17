@@ -1,18 +1,18 @@
 .toolbar__title{
-    background-color: rgb(255, 0, 0);
+    background: url(http://www.showwallpaper.com/wallpaper/0812/024603.jpg);
     font-size: 28px;
     color: rgb(255, 255, 255);
 }
 
 .tabbar{
-    background-color: rgb(255, 0, 0);
+    background: url(http://www.showwallpaper.com/wallpaper/0812/024603.jpg);
     color: rgb(255, 255, 255);
 }
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: black
+    background: url(http://www.showwallpaper.com/wallpaper/0812/024603.jpg);
 }
 
 .display-2 {
@@ -29,21 +29,11 @@ body {
     background-color: #6633FF; 
     border-radius: 4px;
     color: white;
-    padding: 15px 32px;
+    padding: 21px 38px;
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
 }
-
-.btn1 {
-    background-color: #6633FF;
-    border-radius: 4px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-} 
 
 .btn2 {
     background-color: #f44336;
@@ -56,9 +46,45 @@ body {
 }
 
 .container{
+    background-color: rgb(8, 8, 8);
     width: 340px;
-    border: 15px solid rgb(252, 252, 252);
-    padding: 50px;
+    border: 2px solid rgb(119, 7, 7);
+    padding: 10px;
     margin: 20px;
     text-align: center;
 }
+
+.rectangle {
+    position: absolute;
+    height: 245px;
+    left: -1px;
+    right: 0px;
+    top: 0px;
+
+    /* Green/Primary */
+
+    background: #050505;
+}
+
+.h2 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.circle {
+    position: absolute;
+    height: 158px;
+    left: 28.8%;
+    right: 29.07%;
+    top: 128px;
+
+    background: url(https://i.ytimg.com/vi/NHQNEd1t3Ps/mqdefault.jpg);
+    background-position: center;
+    /* White */
+
+    border: 4px solid rgb(119, 7, 7);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 20px rgba(101, 101, 101, 0.15));
+}
+
