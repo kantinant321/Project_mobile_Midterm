@@ -8,3 +8,57 @@
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black
+}
+
+.display-2 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.form-group{
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    background-color: #6633FF; 
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: #6633FF;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.btn2 {
+    background-color: #f44336;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container{
+    width: 340px;
+    border: 15px solid rgb(252, 252, 252);
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+}
