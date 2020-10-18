@@ -1,5 +1,32 @@
-<ons-page id="search">
-    <p style="text-align: center;">
-        <ons-search-input placeholder="Search"></ons-search-input>
-    </p>
+<ons-page>
+    <ons-navigator swipeable id="Nvise" page="search.html"></ons-navigator>
+    <template id="search.html">
+        <ons-page id="search">
+            <p style="text-align: center;">
+                <input style="border-radius: 20px;" type="text" class="form-control" placeholder="Search"
+                    id="searchText" onchange="Searchmovie()">
+            <!-- <br>
+            <ons-carousel swipeable overscrollable animation=“fade”
+                animation-options="{duration: 1.0, delay: 0, timing: ‘ease-in’}" item-width="34%">
+                <ons-carousel-item>
+                    <button type="button" class="btn btn-outline-dark" id="b1" style="width: 80px;" onclick="buttonsearch(1)">Action</button>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <button type="button" class="btn btn-outline-dark" id="b2" style="width: 80px;" onclick="buttonsearch(2)">Comedy</button>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <button type="button" class="btn btn-outline-dark" id="b3" style="width: 80px;" onclick="buttonsearch(3)">Fantasy</button>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <button type="button" class="btn btn-outline-dark" id="b4" style="width: 80px;" onclick="buttonsearch(4)">Horror</button>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <button type="button" class="btn btn-outline-dark" id="b5" style="width: 80px;" onclick="buttonsearch(0)">All</button>
+                </ons-carousel-item>
+                <ons-row> -->
+
+                </p>
+                    <div id="Research"></div>
+        </ons-page>
+    </template>
 </ons-page>

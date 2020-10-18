@@ -3,6 +3,7 @@
   .get()
   .then((querySnapshot) => {
       querySnapshot.forEach((doc)=>{
+        var c = `${doc.data().listN}`
           var card =
         `<div class="card">
           <img class="card-img-top" src="${doc.data().posterURL}" alt="">
@@ -11,7 +12,7 @@
              <p class="card-text">${doc.data().detail}</p>
              </div>
         </div>`
-        $("#list2").append(card);
+        $("#list2"+c).append(card);
       }
       )
   }
