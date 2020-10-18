@@ -1,4 +1,4 @@
-    var db = firebase.firestore();
+  var db = firebase.firestore();
     db.collection("movie")
   .get()
   .then((querySnapshot) => {
@@ -11,7 +11,6 @@
              <p class="card-text">${doc.data().detail}</p>
              </div>
         </div>`
-        $("#list").append(card);
         $("#list2").append(card);
       }
       )

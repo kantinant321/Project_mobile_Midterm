@@ -16,15 +16,17 @@ function signIn(){
   
   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 
-//   promise.catch(e => alert(e.message));
+  promise.catch(e => alert(e.message));
 // alert("Signed In " + email.value);
-
-if (email.value) {
   // User is signed in.
-  console.log(email.value);
-  window.location.href = 'index.html';
+  
+  if(email.value){
+    console.log(email.value);
+    window.location.href = 'index.html';
+  }
+  
 } 
-}
+
 
 
 function signOut(){
