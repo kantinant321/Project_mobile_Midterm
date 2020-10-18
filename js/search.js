@@ -56,7 +56,7 @@ function Searchmovie() {
       </div>
       <div class="col">
         <div class="card-body">
-          <ons-icon icon="md-favorite" size="40px" onclick="Addremove(${doc.data().listN})"></ons-icon>
+          <ons-icon icon="md-star" size="40px" onclick="Addremove(${doc.data().listN})"></ons-icon>
         </div>
       </div>
     </div>
