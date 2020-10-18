@@ -1,4 +1,5 @@
-  var db = firebase.firestore();
+
+ var db = firebase.firestore();
     db.collection("movie")
   .get()
   .then((querySnapshot) => {
