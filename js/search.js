@@ -9,20 +9,19 @@ function Searchmovie() {
         const rptitlemovie = title.replace(/ /g, "");
         var card = `
   <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
+  <div>
       <div class="col">
       <div>
         <img src="${doc.data().posterURL}" class="card-img">
+        <h5 class="card-title">${doc.data().title}</h5>
       </div>
       </div>
       <div class="col">
         <div class="card-body">
-          <h5 class="card-title">${doc.data().title}</h5>
         </div>
       </div>
       <div class="col">
         <div class="card-body">
-          <ons-icon icon="md-favorite" size="40px" onclick="Addremove(${doc.data().listN})"></ons-icon>
         </div>
       </div>
     </div>
@@ -43,20 +42,19 @@ function Searchmovie() {
         var Gn = `${doc.data().Catagory}`
         var card = `
   <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters" id="s${doc.data().listN}">
+  <div id="s${doc.data().listN}">
       <div class="col">
       <div>
         <img src="${doc.data().posterURL}" class="card-img">
+        <h5 class="card-title">${doc.data().title}</h5>
       </div>
       </div>
       <div class="col">
         <div class="card-body">
-          <h5 class="card-title">${doc.data().title}</h5>
         </div>
       </div>
       <div class="col">
         <div class="card-body">
-          <ons-icon icon="md-star" size="40px" onclick="Addremove(${doc.data().listN})"></ons-icon>
         </div>
       </div>
     </div>
