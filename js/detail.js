@@ -12,7 +12,13 @@ function m() {
              <h4 class="card-title">${doc.data().title} - ${doc.data().year}</h4>
              <p class="card-text">${doc.data().detail}</p>
              </div>
-        </div>`
+        </div>
+        <center>
+        <h1>Trailer</h1>
+                    <iframe src="${doc.data().Trailer}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    <center>`
           $("#D"+ num).append(card);
         
       }
