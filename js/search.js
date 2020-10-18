@@ -17,13 +17,9 @@ function Searchmovie() {
       </div>
       </div>
       <div class="col">
-        <div class="card-body">
-        </div>
+      
       </div>
-      <div class="col">
-        <div class="card-body">
-        </div>
-      </div>
+     
     </div>
   </div>
                   `;
@@ -50,13 +46,9 @@ function Searchmovie() {
       </div>
       </div>
       <div class="col">
-        <div class="card-body">
-        </div>
+      
       </div>
-      <div class="col">
-        <div class="card-body">
-        </div>
-      </div>
+     
     </div>
   </div>
                   `;

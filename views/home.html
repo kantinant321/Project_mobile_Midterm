@@ -2,8 +2,10 @@
 <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
 
 <template id="page1.html">
-  <ons-page id="page1">
-    <h1>Animation</h1>
+  <ons-page id="page1" class="con">
+   <div class="bass">Animation</div>
+    
+    
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m1"></div>
@@ -15,8 +17,9 @@
           <div id="m3"></div>        
         </ons-carousel-item>
       </ons-carousel>
-
-      <h1>Comedy</h1>
+      
+      <br>
+      <div class="bass">Comedy</div>
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m4"></div>
@@ -29,7 +32,8 @@
         </ons-carousel-item>
       </ons-carousel>
 
-      <h1>Horror</h1>
+      <br>
+      <div class="bass">Horror</div>
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m7"></div>
@@ -42,7 +46,8 @@
         </ons-carousel-item>
       </ons-carousel>
 
-      <h1>Action</h1>
+      <br>
+      <div class="bass">Action</div>
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m10"></div>
@@ -55,7 +60,8 @@
         </ons-carousel-item>
       </ons-carousel>
 
-      <h1>Fanstasy</h1>
+      <br>
+      <div class="bass">Fantasy</div>
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m13"></div>

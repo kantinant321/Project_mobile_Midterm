@@ -14,7 +14,7 @@ function m() {
              </div>
         </div>
         <center>
-        <h1>Trailer</h1>
+        <div class="bass">Trailer</div>
                     <iframe src="${doc.data().Trailer}" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>

@@ -88,4 +88,10 @@ body {
     filter: drop-shadow(0px 4px 20px rgba(101, 101, 101, 0.15));
 }
 
-
+.page, .page__background, .page__content {
+    background: url(https://i.pinimg.com/originals/c0/5f/95/c05f9557bf365d8e6e88d956b88872da.jpg);
+}
+.bass{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
