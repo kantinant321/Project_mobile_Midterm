@@ -17,23 +17,30 @@ function signIn(){
   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 
   promise.catch(e => alert(e.message));
-// alert("Signed In " + email.value);
-  // User is signed in.
-  
-  if(email.value){
-    console.log(email.value);
-    window.location.href = 'index.html';
-  }
-  
+
+  auth.onAuthStateChanged(function(user){
+    if(user){
+     var email = user.email;
+     alert("Active User " + email);
+     window.location.href = 'index.html'
+     
+     
+    }else{
+ 
+    }
+  }); 
 } 
 
 
 
 function signOut(){
   auth.signOut();
-  // alert("Signed Out");
-  window.location.href = 'signin.html'
+  alert("Signed Out");
+  window.location.href = 'signin.html';
 }
+
+
+
 
 $(function () {
 
