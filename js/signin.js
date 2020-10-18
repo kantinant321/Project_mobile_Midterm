@@ -40,21 +40,63 @@ function signOut(){
 }
 
 
-  firebase.auth().onAuthStateChanged(function (email) {
-      if (email) {
-          // User is signed in.
-          displayName = email.displayName;
-          email = email.email;
-          photoUrl = email.photoURL;
-          console.log(displayName, email, photoUrl);
-
+  firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+          
+          displayName = user.displayName;
+          email = user.email;
+          // photoUrl = user.photoURL;
+          // console.log(displayName, email, photoUrl);
           $("#username").text(email);
 
       } else {
           
       }
   });
+  function signingoogle(){   
+    var provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    firebase.auth().signInWithRedirect(provider);
+    firebase.auth().getRedirectResult().then(function(result) {
+      if (result.credential) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // ...
+      }
+      // The signed-in user info.
+      var user = result.user;
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
+    })};
+      
 
+
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  
+  const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+
+  promise.catch(e => alert(e.message));
+
+  auth.onAuthStateChanged(function(user){
+    if(user){
+     var email = user.email;
+     alert("Active User " + email);
+     window.location.href = 'index.html'
+     
+     
+    }else{
+ 
+    }
+  }); 
+  ;
 
 
 
@@ -79,24 +121,3 @@ function signOut(){
 //   }
 //   )});
 
-$("#signingoogle").click(function(){   
-  
-  var provider = new firebase.auth.GoogleAuthProvider();
-  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-  firebase.auth().signInWithRedirect(provider);
-  firebase.auth().getRedirectResult().then(function(result) {
-      if (result.credential) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = result.credential.accessToken;
-      }
-      // The signed-in user info.
-      var user = result.user;
-    }).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode);
-      $("#error").text(errorMessage);
-    });
-
-});
